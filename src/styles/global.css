@@ -1,0 +1,26 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@font-face {
+  font-family: 'DummyFont';
+  src: url('fonts/dummy-font.ttf') format('TrueType');
+}
+
+@layer components {
+
+  .box-container {
+    @apply
+      max-w-[85%]
+      mx-auto
+      md:max-w-[85%]
+      md:mx-auto
+      lg:w-[80%]
+      lg:max-w-[1100px]
+      lg:mx-auto
+  }
+}
+
+
+.box-shadow {
+  filter: drop-shadow(0 0 0.25rem #afaead);
+}

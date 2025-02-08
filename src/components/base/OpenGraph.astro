@@ -1,0 +1,15 @@
+---
+// const constants = await import(`../../data/constants-${Astro.currentLocale}.json`, {assert: { type: "json"}});
+import constantsFile from '@/data/constants.json';
+
+const currentLocale : ('es'|'en') = (Astro.currentLocale === 'es') ? Astro.currentLocale : 'en';
+const constants = constantsFile[currentLocale];
+---
+
+<meta property="og:title" content={constants.title} />
+<meta property="og:description" content={constants.description} />
+<meta property="og:type" content="website" />
+<meta property="og:url" content={constants.url} />
+<meta property="og:image" content="opengraph.jpg" />
+<meta property="og:image:type" content="image/jpg" />
+<meta property="og:locale" content={currentLocale} />
