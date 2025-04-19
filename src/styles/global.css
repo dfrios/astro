@@ -22,7 +22,9 @@
   --text-md--line-height: 1.5rem;
 }
 
-@plugin "daisyui";
+@plugin "daisyui" {
+  themes: light-theme --default, dark-theme --prefersdark;
+}
 
 @plugin "daisyui/theme" {
   name: "light-theme";
