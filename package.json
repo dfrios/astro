@@ -24,5 +24,6 @@
   },
   "devDependencies": {
     "daisyui": "^5.0.0-beta.7"
-  }
+  },
+  "packageManager": "yarn@4.9.1"
 }
