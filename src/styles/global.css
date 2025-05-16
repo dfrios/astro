@@ -21,7 +21,7 @@
   --text-md:1.35rem;
   --text-md--line-height: 1.5rem;
 
-  --drop-my-shadow: 0 0 6px oklch(50% 0 0);
+  --drop-shadow-my-shadow: 0 0 6px oklch(50% 0 0);
 }
 
 @plugin "daisyui" {
