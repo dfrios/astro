@@ -23,7 +23,6 @@
 }
 
 @plugin "daisyui" {
-  themes: light-theme --default, dark-theme --prefersdark;
 }
 
 @plugin "daisyui/theme" {
