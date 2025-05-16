@@ -20,6 +20,8 @@
   --text-base--line-height: 1.5rem;
   --text-md:1.35rem;
   --text-md--line-height: 1.5rem;
+
+  --drop-my-shadow: 0 0 6px oklch(50% 0 0);
 }
 
 @plugin "daisyui" {
@@ -58,8 +60,6 @@
   --border: 1px;
   --depth: 1;
   --noise: 0;
-
-  --my-shadow: 0 0 6px oklch(70% 0.039 39.93);
 }
 
 @plugin "daisyui/theme" {
