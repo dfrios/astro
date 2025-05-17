@@ -20,6 +20,12 @@
       ],
       "@assets/*": [
         "./src/assets/*"
+      ],
+      "@layouts/*": [
+        "./src/layouts/*"
+      ],
+      "@widgets/*": [
+        "./src/components/widgets/*"
       ]
     }
   }
