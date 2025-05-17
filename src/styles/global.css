@@ -22,6 +22,8 @@
   --text-md--line-height: 1.5rem;
 
   --drop-shadow-my-shadow: 0 0 6px oklch(50% 0 0);
+
+  --animate-wobble: wobble 3s both infinite;
 }
 
 @plugin "daisyui" {
@@ -129,4 +131,26 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
+}
+
+@keyframes wobble {
+  0%, 50% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+  7% {
+    transform: translateX(-7px) rotate(-3deg);
+  }
+  15% {
+    transform: translateX(3px) rotate(3deg);
+  }
+  22% {
+    transform: translateX(-3px) rotate(-1.8deg);
+  }
+  30% {
+    transform: translateX(2px) rotate(1.2deg);
+  }
+  38% {
+    transform: translateX(-1px) rotate(-0.6deg);
+  }
 }
