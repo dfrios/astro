@@ -24,6 +24,9 @@
   --drop-shadow-my-shadow: 0 0 6px oklch(50% 0 0);
 
   --animate-wobble: wobble 3s both infinite;
+  --animate-kenburns-left: kenburns-left 15s 3s linear both;
+  --animate-kenburns-right-invert: kenburns-right-invert 15s linear both;
+
 }
 
 @plugin "daisyui" {
@@ -155,5 +158,27 @@ input[type=number] {
   }
   38% {
     transform: translateX(-1px) rotate(-0.6deg);
+  }
+}
+
+@keyframes kenburnsleft {
+  0% { 
+    transform: scale(1) translate(0, 0);
+    transform-origin: 16% 50%;
+  }
+  100% { 
+    transform: scale(2) translate(-20px, 15px);
+    transform-origin: left;
+  }
+}
+
+@keyframes kenburns-right-invert {
+  0% { 
+    transform: scale(2) translate(0, 0);
+    transform-origin: left
+  }
+  100% { 
+    transform: scale(1) translate(0, 0);
+    transform-origin: 16% 50%
   }
 }
