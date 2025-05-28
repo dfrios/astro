@@ -1,10 +1,10 @@
 ---
 import '@/styles/global.css';
 
-import MetaPixelHead from "@/components/base/MetaPixelHead.astro";
-import MetaPixelBody from "@/components/base/MetaPixelBody.astro";
-import GoogleTagManagerHead from "@/components/base/GoogleTagManagerHead.astro";
-import GoogleTagManagerBody from "@/components/base/GoogleTagManagerBody.astro";
+// import MetaPixelHead from "@/components/base/MetaPixelHead.astro";
+// import MetaPixelBody from "@/components/base/MetaPixelBody.astro";
+// import GoogleTagManagerHead from "@/components/base/GoogleTagManagerHead.astro";
+// import GoogleTagManagerBody from "@/components/base/GoogleTagManagerBody.astro";
 import OpenGraph from "@/components/base/OpenGraph.astro";
 
 import * as constantsFile from '@/data/constants.json';
@@ -24,15 +24,15 @@ const constants = constantsFile[currentLocale];
 
 		<title>{constants.TITLE}</title>
 
-		<GoogleTagManagerHead />
-		<MetaPixelHead />
+		<!-- <GoogleTagManagerHead /> -->
+		<!-- <MetaPixelHead /> -->
 		<OpenGraph />
 
 	</head>
 	<body class="bg-green-500 text-balance">
 
-		<GoogleTagManagerBody />
-		<MetaPixelBody />
+		<!-- <GoogleTagManagerBody /> -->
+		<!-- <MetaPixelBody /> -->
 
     <slot />
 
