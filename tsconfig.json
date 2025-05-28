@@ -15,6 +15,9 @@
       "@/*": [
         "./src/*"
       ],
+      "@data/*": [
+        "./src/data/*"
+      ],
       "@components/*": [
         "./src/components/*"
       ],
