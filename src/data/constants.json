@@ -1,13 +1,13 @@
 {
   "es" : {
-    "title": "Título",
-    "description": "Descripción",
-    "url":  ""
+    "TITLE": "Título",
+    "DESCRIPTION": "Descripción",
+    "URL":  ""
   },
 
   "en" : {
-    "title": "Title",
-    "description": "Description",
-    "url":  ""
+    "TITLE": "Title",
+    "DESCRIPTION": "Description",
+    "URL":  ""
   }
 }
