@@ -7,15 +7,15 @@ import relativeLinks from "astro-relative-links";
 // https://docs.astro.build/en/guides/integrations-guide/sitemap/
 import sitemap from '@astrojs/sitemap';
 
-// https://www.npmjs.com/package/astro-devtool-breakpoints
-import devtoolBreakpoints from 'astro-devtool-breakpoints';
+// https://jsr.io/@jonasgeiler/astro-show-tailwindcss-breakpoint
+import showTailwindcssBreakpoint from "astro-show-tailwindcss-breakpoint";
 
 // https://astro.build/config
 export default defineConfig({
   integrations: [
     react(),
     relativeLinks(),
-    devtoolBreakpoints(),
+    showTailwindcssBreakpoint(),
     sitemap({
       changefreq: "weekly",
       priority: 0.7,
