@@ -1,4 +1,6 @@
 ---
+import { Font } from "astro:assets";
+
 import '@/styles/global.css';
 
 // import MetaPixelHead from "@/components/base/MetaPixelHead.astro";
@@ -28,8 +30,10 @@ const constants = constantsFile[currentLocale];
 		<!-- <MetaPixelHead /> -->
 		<OpenGraph />
 
+		<Font cssVariable="--font-dummy" preload />
+
 	</head>
-	<body class="bg-green-500 text-balance">
+	<body class="bg-green-500 text-balance font-dummy text-base">
 
 		<!-- <GoogleTagManagerBody /> -->
 		<!-- <MetaPixelBody /> -->

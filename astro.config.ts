@@ -5,7 +5,7 @@ import react from "@astrojs/react";
 import relativeLinks from "astro-relative-links";
 
 // https://docs.astro.build/en/guides/integrations-guide/sitemap/
-import sitemap from '@astrojs/sitemap';
+import sitemap from "@astrojs/sitemap";
 
 // https://jsr.io/@jonasgeiler/astro-show-tailwindcss-breakpoint
 import showTailwindcssBreakpoint from "astro-show-tailwindcss-breakpoint";
@@ -28,13 +28,30 @@ export default defineConfig({
   },
 
   build: {
-    assets: '_assets'
+    assets: "_assets",
   },
 
   i18n: {
-    defaultLocale: 'es',
-    locales: ['es', 'en'],
+    defaultLocale: "es",
+    locales: ["es", "en"],
   },
 
-  site: "https://mysite.com"
+  experimental: {
+    fonts: [
+      {
+        provider: "local",
+        name: "dummy",
+        cssVariable: "--font-dummy",
+        variants: [
+          {
+            weight: 400,
+            style: "normal",
+            src: ["./src/assets/fonts/poppins-regular.ttf"],
+          },
+        ],
+      },
+    ],
+  },
+
+  site: "https://mysite.com",
 });

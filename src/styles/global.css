@@ -1,17 +1,7 @@
-@font-face {
-  font-family: 'DummyFont';
-  src: url('fonts/dummy-font.ttf') format('TrueType');
-}
-
-
 @import "tailwindcss";
 
 @theme {
   --font-*: initial;
-  --font-light: "DummyFont", "sans-serif";
-  --font-regular: "DummyFont", "sans-serif";
-  --font-medium: "DummyFont", "sans-serif";
-  --font-bold: "DummyFont", "sans-serif";
 
   --text-*: initial;
   --text-sm: 0.9rem;
@@ -26,7 +16,10 @@
   --animate-wobble: wobble 3s both infinite;
   --animate-kenburns-left: kenburns-left 15s 3s linear both;
   --animate-kenburns-right-invert: kenburns-right-invert 15s linear both;
+}
 
+@theme inline {
+  --font-dummy: var(--font-dummy);
 }
 
 @plugin "daisyui" {
