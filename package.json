@@ -10,12 +10,12 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/react": "4.3.0",
-    "@astrojs/sitemap": "3.5.1",
+    "@astrojs/react": "4.4.0",
+    "@astrojs/sitemap": "3.6.0",
     "@tailwindcss/vite": "^4.0.4",
     "@types/react": "^19.0.8",
     "@types/react-dom": "^19.0.3",
-    "astro": "5.13.3",
+    "astro": "5.14.4",
     "astro-devtool-breakpoints": "^0.3.0",
     "astro-relative-links": "^0.4.2",
     "react": "^19.0.0",
@@ -23,10 +23,10 @@
     "tailwindcss": "^4.0.4"
   },
   "devDependencies": {
+    "astro-show-tailwindcss-breakpoint": "^1.0.10",
     "daisyui": "^5.0.0-beta.7",
     "prettier": "3.5.3",
     "prettier-plugin-astro": "0.14.1",
-    "prettier-plugin-tailwindcss": "^0.6.14",
-    "astro-show-tailwindcss-breakpoint": "^1.0.10"
+    "prettier-plugin-tailwindcss": "^0.6.14"
   }
 }
