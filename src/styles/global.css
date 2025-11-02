@@ -3,6 +3,16 @@
 @theme {
   --font-*: initial;
 
+  --font-weight-thin: 100;
+  --font-weight-extralight: 200;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  --font-weight-black: 900;
+
   --text-*: initial;
   --text-sm: 0.9rem;
   --text-sm--line-height: 1rem;
@@ -19,7 +29,8 @@
 }
 
 @theme inline {
-  --font-dummy: var(--font-dummy);
+  /* --font-roboto-regular: var(--font-roboto-regular); */
+  /* --font-roboto-italic: var(--font-roboto-italic); */
 }
 
 @plugin "daisyui" {
@@ -31,10 +42,12 @@
   prefersdark: false;
   color-scheme: "light";
 
+  --color-base-content: oklch(27.11% 0.039 39.93);
+
+  /* Background color */
   --color-base-100: oklch(96.48% 0.017 17.46);
   --color-base-200: oklch(98.18% 0.009009553482392496 34.30327182035201);
   --color-base-300: oklch(91.45% 0.039 17.89);
-  --color-base-content: oklch(27.11% 0.039 39.93);
 
   --color-primary: oklch(93.68% 0.03200956182285715 15.361930351486542);
   --color-primary-content: oklch(38.96% 0.0617 40);

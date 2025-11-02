@@ -40,13 +40,25 @@ export default defineConfig({
     fonts: [
       {
         provider: "local",
-        name: "dummy",
-        cssVariable: "--font-dummy",
+        name: "roboto-regular",
+        cssVariable: "--font-roboto-regular",
         variants: [
           {
-            weight: 400,
+            weight: "100 200 300 400 500 700 800 900",
             style: "normal",
-            src: ["./src/assets/fonts/poppins-regular.ttf"],
+            src: ["./src/assets/fonts/roboto-variable.ttf"],
+          },
+        ],
+      },
+      {
+        provider: "local",
+        name: "roboto-italic",
+        cssVariable: "--font-roboto-italic",
+        variants: [
+          {
+            weight: "100 200 300 400 500 700 800 900",
+            style: "normal",
+            src: ["./src/assets/fonts/roboto-variable-italic.ttf"],
           },
         ],
       },
