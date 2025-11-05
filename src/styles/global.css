@@ -42,6 +42,7 @@
   prefersdark: false;
   color-scheme: "light";
 
+  /* Text color */
   --color-base-content: oklch(27.11% 0.039 39.93);
 
   /* Background color */
