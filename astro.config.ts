@@ -40,8 +40,8 @@ export default defineConfig({
     fonts: [
       {
         provider: "local",
-        name: "roboto-regular",
-        cssVariable: "--font-roboto-regular",
+        name: "roboto",
+        cssVariable: "--font-roboto",
         variants: [
           {
             weight: "100 200 300 400 500 700 800 900",
