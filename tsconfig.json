@@ -19,6 +19,9 @@
       "@data/*": [
         "./src/data/*"
       ],
+      "@lang/*": [
+        "./src/lang/*"
+      ],
       "@components/*": [
         "./src/components/*"
       ],
@@ -29,7 +32,11 @@
         "./src/layouts/*"
       ],
       "@widgets/*": [
-        "./src/components/widgets/*"
+        "./src/widgets/*"
+      ]
+      ,
+      "@interfaces/*": [
+        "./src/interfaces/*"
       ]
     }
   }
