@@ -1,9 +1,14 @@
 ---
-// const constants = await import(`../../data/constants-${Astro.currentLocale}.json`, {assert: { type: "json"}});
-import * as constantsFile from '@/data/constants.json';
+import type { lang } from "@interfaces/lang";
+import config from '@/data/config.json';
 
-const currentLocale : ('es'|'en') = (Astro.currentLocale === 'es') ? Astro.currentLocale : 'en';
-const constants = constantsFile[currentLocale];
+interface Props {
+  lang: lang;
+}
+
+const { lang } = Astro.props;
+
+const constants = config[lang];
 ---
 
 <meta property="og:title" content={constants.TITLE} />
@@ -12,4 +17,4 @@ const constants = constantsFile[currentLocale];
 <meta property="og:url" content={constants.URL} />
 <meta property="og:image" content="opengraph.jpg" />
 <meta property="og:image:type" content="image/jpg" />
-<meta property="og:locale" content={currentLocale} />
+<meta property="og:locale" content={lang} />

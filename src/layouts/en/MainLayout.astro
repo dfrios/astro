@@ -1,0 +1,45 @@
+---
+import { Font } from "astro:assets";
+
+import '@/styles/global.css';
+import config from '@/data/config.json';
+
+// import MetaPixelHead from "@/components/base/MetaPixelHead.astro";
+// import MetaPixelBody from "@/components/base/MetaPixelBody.astro";
+// import GoogleTagManagerHead from "@/components/base/GoogleTagManagerHead.astro";
+// import GoogleTagManagerBody from "@/components/base/GoogleTagManagerBody.astro";
+import OpenGraph from "@/components/base/OpenGraph.astro";
+
+const constants = config.en;
+---
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth h-full" dir="ltr">
+	<head>
+		<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+		<meta name="generator" content={Astro.generator} />
+		<link rel="sitemap" href="/sitemap-index.xml" />
+
+		<title>{constants.TITLE}</title>
+
+		<!-- <GoogleTagManagerHead /> -->
+		<!-- <MetaPixelHead /> -->
+		<OpenGraph lang="en" />
+
+		<Font cssVariable="--font-roboto" preload />
+		<Font cssVariable="--font-roboto-italic" preload />
+
+	</head>
+	<body class="bg-green-500 text-balance font-roboto text-base">
+
+		<!-- <GoogleTagManagerBody /> -->
+		<!-- <MetaPixelBody /> -->
+
+    <slot />
+
+	</body>
+
+	<script src="../../scripts/scripts.ts"></script>
+</html>
