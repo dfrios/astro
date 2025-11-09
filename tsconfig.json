@@ -33,8 +33,7 @@
       ],
       "@widgets/*": [
         "./src/widgets/*"
-      ]
-      ,
+      ],
       "@interfaces/*": [
         "./src/interfaces/*"
       ]
