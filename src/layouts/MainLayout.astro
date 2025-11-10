@@ -10,15 +10,22 @@ import config from '@/data/config.json';
 // import GoogleTagManagerBody from "@/components/base/GoogleTagManagerBody.astro";
 import OpenGraph from "@/components/base/OpenGraph.astro";
 
-const constants = config.es;
+import type { lang } from "@interfaces/lang";
+interface Props {
+  lang: lang;
+  className?: string;
+}
+
+const { lang } = Astro.props;
+const constants = config[lang];
 ---
 
 <!DOCTYPE html>
-<html lang="es" class="scroll-smooth h-full" dir="ltr">
+<html lang={lang} class="scroll-smooth h-full" dir="ltr">
 	<head>
 		<meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="icon" type="image/png" href="favicon.png" />
 		<meta name="generator" content={Astro.generator} />
 		<link rel="sitemap" href="/sitemap-index.xml" />
 
@@ -26,7 +33,7 @@ const constants = config.es;
 
 		<!-- <GoogleTagManagerHead /> -->
 		<!-- <MetaPixelHead /> -->
-		<OpenGraph lang="es" />
+		<OpenGraph lang={lang} />
 
 		<Font cssVariable="--font-roboto" preload />
 		<Font cssVariable="--font-roboto-italic" preload />
