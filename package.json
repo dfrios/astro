@@ -10,12 +10,12 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/react": "4.4.1",
+    "@astrojs/react": "4.4.2",
     "@astrojs/sitemap": "3.6.0",
     "@tailwindcss/vite": "^4.1.16",
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.2",
-    "astro": "5.15.3",
+    "astro": "5.16.6",
     "astro-devtool-breakpoints": "^0.3.0",
     "astro-relative-links": "^0.4.2",
     "react": "^19.2.0",
