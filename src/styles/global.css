@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@plugin "tailwind-clamp";
+
 @theme {
   --breakpoint-*: initial;
   --breakpoint-mobile-2: 390px;
