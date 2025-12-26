@@ -23,6 +23,7 @@
     "tailwindcss": "^4.1.16"
   },
   "devDependencies": {
+    "@astrojs/check": "^0.9.6",
     "astro-show-tailwindcss-breakpoint": "^1.0.10",
     "daisyui": "^5.4.1",
     "prettier": "3.6.2",
@@ -30,6 +31,7 @@
     "prettier-plugin-tailwindcss": "^0.7.1",
     "sharp": "^0.34.4",
     "tailwind-clamp": "^4.1.2",
-    "tailwind-merge": "^3.3.1"
+    "tailwind-merge": "^3.3.1",
+    "typescript": "^5.9.3"
   }
 }
