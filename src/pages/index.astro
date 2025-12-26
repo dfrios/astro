@@ -1,8 +1,20 @@
-<script>
-	const locale = new Intl.Locale(navigator.language);
+---
+import Config from "@data/config.json";
+---
 
-	if (locale.language === 'en')
-		window.location.href = '/en';
-	else
-		window.location.href = '/es';
-</script>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="refresh" content="5;url=/es/" />
+    <title>{Config.es.TITLE}</title>
+    <script>
+      const locale = new Intl.Locale(navigator.language);
+
+      if (locale.language === "en") window.location.href = "/en";
+      else window.location.href = "/es";
+    </script>
+  </head>
+  <body> </body>
+</html>
